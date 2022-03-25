@@ -1,0 +1,21 @@
+<mat-toolbar>
+ <div class="w-full flex items-center justify-center">
+   <div class="logo-div">
+     <img src="favicon.ico"/>
+   </div>
+ </div>
+</mat-toolbar>
+<article class="flex">
+  <section class="w-full lg:w-1/3 mx-3 p-3">
+    <button (click)="openFilterDialog()" mat-raised-button color="primary" class="px-4 py-2 mx-2 cursor-pointer bg-sky-500 hover:bg-cyan-600 rounded text-white">Filter</button>
+    <div *ngFor="let image of instaDataArray" class="m-3 p-2">
+      <app-feed-card [instadata]="image" (instaData)="updataData($event)" ></app-feed-card>
+    </div>
+  </section>
+  <section class="w-full lg:w-2/3">
+    <h1>HI!, Vinayak Here,</h1>
+    <h2>This project uses Angular, angular material and tailwindcss.</h2>
+    <p> I'm not confirm about the modal thing, it required more details, so I opened the Images in dialog.</p>
+    <p>The filter function is a simple comparator that I wrote.</p>
+  </section>
+</article>

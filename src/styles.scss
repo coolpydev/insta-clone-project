@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.submit-dialog {
+  height: 180px;
+  border-radius: 20px;
+
+  .mat-dialog-container {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 0px;
+  }
+}
+
+.image-dialog {
+  height: auto;
+  border-radius: 20px;
+
+  .mat-dialog-container {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 5px;
+  }
+}
